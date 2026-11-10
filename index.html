@@ -9,6 +9,49 @@
     <link rel="stylesheet" href="./styles.css">
 </head>
 <body>
-<h1>Sign-Up</h1>
+<section class="left-section">
+    <div>
+        <img src="./img/odin-lined.webp" alt="">
+        <h1>ODIN</h1>
+    </div>
+</section>
+<section class="right-section">
+    <p>This is not a real online service! You know you need something like this in your life to help you realize your deepest dreams.<br>Sign up <span class="italic">now</span> to get started</p>
+    <p>You <span class="italic">know</span> you want to.</p>
+
+    <div class="main-form-container">
+        <h2>Let's do this!</h2>
+        <form action="">
+            <div class="sub-form-container">
+                <div class="input-container">
+                    <label for="first-name">First Name</label>
+                    <input type="text" placeholder="First Name" id="first-name" name="user_first_name" required>
+                </div>
+                <div class="input-container">
+                    <label for="last-name">Last Name</label>
+                    <input type="text" placeholder="Last Name" id="last-name" name="user_last_name" required>
+                </div>
+                <div class="input-container">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" placeholder="Email Address" name="user_email" >
+                </div>
+                <div class="input-container">
+                    <label for="phone">Phone number</label>
+                    <input type="tel" id="phone" placeholder="Phone Number" name="user_phone">
+                </div>
+                <div class="input-container">
+                    <label for="password">Password</label>
+                    <input type="password" name="password" id="password" placeholder="Password">
+                </div>
+                <div class="input-container">
+                    <label for="confirm-password">Confirm Password</label>
+                    <input type="password" id="confirm-password" placeholder="Confirm Password">
+                </div>
+            </div>
+            <input type="submit" value="Create Account" id="create-account">
+        </form>
+        <p>Already have an account? <a href="https://www.youtube.com/watch?v=Aq5WXmQQooo" target="_blank" rel="noreferrer noopener" >Log in</a></p>
+    </div>
+</section>
 </body>
 </html>
