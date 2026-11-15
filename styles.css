@@ -20,7 +20,7 @@ body{
 /* Left section */
 
 .left-section {
-    width: 30%;
+    width: 35%;
     height: 100%;
     background-image: url('./img/background.webp');
     background-size: cover;
@@ -67,49 +67,87 @@ body{
     background-color: #F9FAFB;
 }
 .right-description-container{
-    padding: 1rem;
+    margin-top: 4rem;
+    padding: 4rem;
+    gap: 2rem;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
+    align-items: flex-start;
     height: 30%;
+    font-size: 2rem;
+    font-weight: bold;
 }
 .shadow {
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
     padding-left: 4rem;
     padding-top: 2rem;
     background-color: white;
+    height: auto;
 }
 .shadow h2{
     font-size: 2rem;
 }
 .sub-form-container{
-    height: 400px;
+    height: 100%;
     display: grid;
     grid-template-columns: repeat(2, 30%);
-    padding-top: 1rem;
+    grid-template-rows: repeat(2, 30%);
+    padding-top: 2rem;
+
 }
 .input-container{
     display: flex;
     justify-content: center;
     flex-direction: column;
     width: 80%;
+    margin-bottom: 2rem;
 }
 .input-container input{
     outline: none;
     padding: 0.5rem;
     border: 1px solid #E5E7EB;
     border-radius: 4px;
-    margin-bottom: 1rem;
 }
 .input-container input:focus{
     border: 1px solid blue;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
 }
 .input-container input:user-invalid{
     border: 1px solid red;
 }
 .input-container label{
     margin-bottom: 0.5rem;
+    font-size: 0.9rem;
+    font-weight: bold;
+    color: grey;
+    text-transform: uppercase;
+}
+.submit-button{
+    margin-left:4rem;
+    margin-top: 2.5rem;
+    background-color: #596D48;
+    padding: 1rem 3rem;
+    border-radius: 10px;
+    color: white;
+    font-weight: bold;
     font-size: 1.2rem;
 
+}
+.submit-button:hover{
+    background-color: #3c4b28;
+    color: white;
+    cursor: pointer;
+}
+.already-sub{
+    margin-left : 4rem;
+    margin-top: 2rem;
+    font-size: 1.2rem;
+}
+.already-sub a:link{
+    color: #596D48;
+    text-decoration: none;
+}
+.already-sub a:visited{
+    color: blueviolet;
 }
